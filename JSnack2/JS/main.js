@@ -5,35 +5,13 @@ let nameRandom = new Array();
 
 let surnameRandom = new Array();
 
-for (let i = 0; i <= arrayName.length - 1; i++) {
+for (let i = 0; i < 5; i++) {
 
+    let randomName = Math.floor(Math.random() * arrayName.length);
+    let randomSurname = Math.floor(Math.random() * arraySurname.length);
 
-
-    let random = Math.floor(Math.random() * arrayName.length);
-
-    // console.log('Random Name: ', arrayName[random]);
-    nameRandom[i] = arrayName[random];
-
-    console.log(nameRandom);
-
-
+    console.log(arrayName[randomName] + ' ' + arraySurname[randomSurname]);
 }
-
-for (let i = 0; i <= arraySurname.length - 1; i++) {
-
-
-    let random = Math.floor(Math.random() * arraySurname.length);
-
-    //console.log('Random Surname: ', arraySurname[random]);
-    surnameRandom[i] = arraySurname[random];
-
-}
-
-alert('name random: ' + nameRandom);
-alert('Surname random: ' + surnameRandom);
-
-
-//if (nameRandom.length == arrayName.length) && (surnameRandom.length == arraySurname.length){}
 
 
 
