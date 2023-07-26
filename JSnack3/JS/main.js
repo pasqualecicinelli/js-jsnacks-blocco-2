@@ -6,9 +6,9 @@ let result = 0;
 
 for (i = 0; i < numberIntegers.length; i++) {
 
-    if (i % 2 == 0) {
+    if (i % 2 == 1) {
 
         result += numberIntegers[i];
     }
 }
-console.log('Somma degli elementi con indice pari: ' + result)
+console.log('Somma degli elementi con indice dispari: ' + result)
